@@ -30,26 +30,37 @@ import java.util.Scanner;
 public class FinancialPayrollApp {
 
     public static void printPayrollStatement() {
-        String name;
-        float hours;
-        float payRate;
-        float fedTax;
-        float stateTax;
-
         Scanner scan = new Scanner(System.in);
+
+        // Prompts
         System.out.print("Enter employee's name: ");
-        name = scan.nextLine();
-
+        String name = scan.nextLine();
         System.out.print("Enter number of hours worked in a week: ");
-        hours = Float.parseFloat(scan.nextLine());
+        float hours = Float.parseFloat(scan.nextLine());
+        System.out.print("Enter hourly pay rate: $");
+        float payRate = Float.parseFloat(scan.nextLine());
+        System.out.print("Enter federal tax withholding rate as a percentage: ");
+        float fedTax = Float.parseFloat(scan.nextLine());
+        System.out.print("Enter state tax withholding rate as a percentage: ");
+        float stateTax = Float.parseFloat(scan.nextLine());
+        scan.close();
 
-        System.out.print("Enter hourly pay rate: ");
-        payRate = Float.parseFloat(scan.nextLine());
+        // Print payroll statement
+        System.out.println("\n********** Payroll Statement **********");
+        System.out.println("Employee Name: " + name);
+        System.out.println("Hours Worked: " + hours);
+        System.out.println("Pay Rate: $" + payRate);
+        float grossPay = payRate * hours;
+        System.out.printf("Gross Pay: $%.2f", grossPay);
+        System.out.println("\nDeductions: ");
 
-        System.out.print("Enter federal tax withholding rate: ");
-
-
-
+        float fedWithholding = payRate * hours * fedTax/100;
+        System.out.printf("   Federal Withholding: $%.2f", fedWithholding);
+        float stateWithholding = payRate * hours * stateTax/100;
+        System.out.printf("\n   State Withholding: $%.2f", stateWithholding);
+        float deduction = fedWithholding + stateWithholding;
+        System.out.printf("\nTotal Deduction: $%.2f", deduction);
+        System.out.printf("\nNet Pay: $%.2f", grossPay - deduction);
     }
 
     public static void main(String[] args) {
