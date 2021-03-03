@@ -42,7 +42,11 @@ public class FinancialPayrollApp {
 
         System.out.print("Enter number of hours worked in a week: ");
         hours = Float.parseFloat(scan.nextLine());
-        System.out.println(hours);
+
+        System.out.print("Enter hourly pay rate: ");
+        payRate = Float.parseFloat(scan.nextLine());
+
+        System.out.print("Enter federal tax withholding rate: ");
 
 
 
