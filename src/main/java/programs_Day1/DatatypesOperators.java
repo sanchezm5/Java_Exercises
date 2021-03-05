@@ -1,4 +1,4 @@
-package programs;
+package programs_Day1;
 
 /** Using only the programming techniques you learned in this lesson, write an application that calculates the squares
  *  and cubes of between two numbers and prints the resulting values in table format, as shown below.

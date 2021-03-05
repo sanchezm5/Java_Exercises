@@ -14,7 +14,7 @@
  *              No numbers are entered except 0
  */
 
-package programs;
+package programs_Day1;
 
 import java.util.Scanner;
 

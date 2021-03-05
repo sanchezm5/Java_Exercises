@@ -1,4 +1,4 @@
-package programs;
+package programs_Day1;
 
 /** (Population projection) The U.S. Census Bureau projects population based on the following assumptions:
  *      One birth every 7 seconds

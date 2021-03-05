@@ -1,4 +1,4 @@
-package programs;
+package programs_Day1;
 
 /** Write a java program to display the following series:
  *

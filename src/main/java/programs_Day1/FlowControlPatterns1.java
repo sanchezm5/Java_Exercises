@@ -6,7 +6,7 @@
  *              3. If one digit in the user input matches a digit in the lottery number, the award is $1,000.
  */
 
-package programs;
+package programs_Day1;
 
 import java.util.Random;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package programs;
+package programs_Day1;
 
 /** Write a Java program by using three for loops to print the following pattern:
  *
