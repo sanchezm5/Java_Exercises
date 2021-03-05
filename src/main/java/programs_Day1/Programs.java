@@ -1,6 +1,5 @@
-package programs_Day1;
-
-/** Write a java program to display the following series:
+/**
+ * Write a java program to display the following series:
  *
  *                  *
  *                 * *
@@ -8,6 +7,8 @@ package programs_Day1;
  *               * * * *
  *              * * * * *
  */
+
+package programs_Day1;
 
 public class Programs {
 
