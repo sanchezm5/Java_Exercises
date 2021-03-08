@@ -14,7 +14,3 @@ create table if not exists employee (
     manager_id int(11) not null,
     department_id int(11) not null
 );
-
-
-
-
